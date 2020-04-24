@@ -1,3 +1,17 @@
+# v0.1.3 (Fri Apr 24 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Updated the Circle CI yaml file (samrat@hellotars.com)
+- Added the updated node version (samrat@hellotars.com)
+- Updated the Package.json + Config.yml (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.1 (Fri Apr 24 2020)
 
 #### 🐛 Bug Fix
