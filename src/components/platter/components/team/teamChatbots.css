@@ -1,0 +1,31 @@
+.team-chatbots-container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 24px;
+  padding-bottom: 0px;
+}
+.team-chatbots-container-contents {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 24px;
+  justify-content: space-between;
+}
+.team-chatbots-container-contents-details {
+  display: flex;
+  background-color: lightgray;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 35px;
+  align-items: center;
+}
+.team-chatbots-container .normal-card {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.team-chatbots-container .robot-image {
+  width: 35px;
+}

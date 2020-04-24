@@ -1,0 +1,37 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Platter from "./platter";
+import PlatterExample from "./platterExample";
+
+<Meta title="Design System|Platter" component={Platter} />
+
+export const Container = styled.div`
+  margin: 8px;
+  height: 90vh;
+`;
+
+## Card Component
+
+<Preview>
+  <Story name="Platter">
+    <Container>
+      <Platter headerName="Platter Header">Platter Contents</Platter>
+    </Container>
+  </Story>
+</Preview>
+
+## Different States of Platter
+
+<Preview>
+  <Story name="Teams Platter">
+    <Container>
+      <PlatterExample />
+    </Container>
+  </Story>
+</Preview>
+
+## Props Details of the Platter Component
+
+<Props of={Platter} />
+
+> The Props with \* are required by the component.

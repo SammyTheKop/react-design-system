@@ -1,0 +1,54 @@
+.platter-contents-container {
+  display: flex;
+  height: 100%;
+}
+.platter-contents-container-sidenav {
+  width: 25%;
+  background-color: white;
+  height: 100%;
+  overflow: auto;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.platter-contents-container-sidenav-contents-header {
+  font-weight: 700;
+  padding: 12px;
+  border-bottom: 1px solid lightgray;
+}
+.platter-contents-container-sidenav-contents-header-list {
+  padding: 12px;
+}
+.platter-contents-container-sidenav-contents-header-list-team-name {
+  font-weight: 700;
+}
+.platter-contents-container-sidenav-contents-header-list-values:hover {
+  background-color: #c5c5c5;
+}
+.platter-contents-container-sidenav-contents-teams {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.platter-contents-container-sidenav-contents-teams-name {
+  flex-grow: 1;
+}
+.platter-contents-container-sidenav-contents-teams:hover {
+  background-color: #c5c5c5;
+}
+.platter-contents-container-details {
+  width: 75%;
+  overflow: auto;
+}
+.platter-contents-container .icons {
+  width: 20%;
+}
+.platter-contents-container .accordion {
+  margin: 12px;
+  border: 1px solid #c5c5c5;
+}
+.platter-contents-container .accordion__button {
+  font-weight: 700;
+}
+.platter-contents-container .accordion__button::before {
+  display: none;
+}

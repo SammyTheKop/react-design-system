@@ -1,0 +1,56 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Accordion from "./accordion";
+
+<Meta title="Design System|Accordion" component={Accordion} />
+
+export const Container = styled.div`
+  width: 50%;
+  padding: 12px;
+`;
+
+## Basic Usage of Accordion
+
+<Preview>
+  <Story name="Accordion">
+    <Container>
+      <Accordion>
+        <Accordion.Title index={1}>This is title 1</Accordion.Title>
+        <Accordion.Content index={1}>
+          This is content of the accordion 1
+        </Accordion.Content>
+        <Accordion.Title index={2}>This is title 2</Accordion.Title>
+        <Accordion.Content index={2}>
+          This is content of the accordion 2
+        </Accordion.Content>
+      </Accordion>
+    </Container>
+  </Story>
+</Preview>
+
+## Props Details of the Accordion Component
+
+<Props of={Accordion} />
+
+> The Props with \* are required by the component.
+
+# Note
+ > We are using React Accessible Accordion to do this
+
+## Component API
+
+Accordion: `allowMultipleExpanded : boolean [optional, default: false]`
+
+Don't autocollapse items when expanding other items :
+`allowZeroExpanded : boolean [optional, default: false]`
+
+Allow the only remaining expanded item to be collapsed :
+`preExpanded: string[] [optional, default: []]`
+
+Accepts an array of strings and any AccordionItem whose uuid prop matches any one of these strings will be expanded on mount : 
+`className : string [optional, default: 'accordion']`
+
+Classes to apply to element : 
+`onChange : (string[]) => void [optional]`
+
+Callback which is invoked when items are expanded or collapsed. Gets passed uuids of the currently expanded AccordionItems.

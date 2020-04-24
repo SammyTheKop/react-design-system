@@ -1,0 +1,49 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Dropdown from "./dropdown";
+
+<Meta title="Design System|Dropdown" component={Dropdown} />
+
+export const Container = styled.div`
+  margin: 8px;
+`;
+
+export const dropdownList = [
+  {
+    id: 1,
+    name: "Dropdown Content - 1",
+    clickHandlerFunc: (e, id, name) => {
+      console.log("Button Clicked", id, name);
+    }
+  },
+  {
+    id: 2,
+    name: "Dropdown Content - 2",
+    clickHandlerFunc: (e, id, name) => {
+      console.log("Button Clicked", id, name);
+    }
+  },
+  {
+    id: 3,
+    name: "Dropdown Content - 3",
+    clickHandlerFunc: (e, id, name) => {
+      console.log("Button Clicked", id, name);
+    }
+  }
+];
+
+## Card Component
+
+<Preview>
+  <Story name="Dropdown">
+    <Container>
+      <Dropdown dropdownName="Dropdown" dropdownList={dropdownList} />
+    </Container>
+  </Story>
+</Preview>
+
+## Props Details of the Dropdown Component
+
+<Props of={Dropdown} />
+
+> The Props with \* are required by the component.

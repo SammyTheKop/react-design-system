@@ -1,0 +1,220 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Button from "./iconButton";
+
+<Meta title="Design System|Icon Button" component={Button} />
+
+export const handleButtonClick = () => {
+  console.log("Icon Button Clicked");
+};
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ButtonContainer = styled.div`
+  margin-top: 8px;
+  margin-left: 8px;
+`;
+
+## Button Component
+
+<Preview>
+  <Story name="Icon Button">
+    <ButtonContainer>
+      <Button handleClick={handleButtonClick}>Teams</Button>
+    </ButtonContainer>
+  </Story>
+</Preview>
+
+## Different States of the Button Component
+
+<Preview>
+  <Container>
+    Icon Type
+    <ButtonContainer>
+      <h3>1. Extra Small Button: </h3>
+      <Button size="button-extra-small" handleClick={handleButtonClick}>
+        Test
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>2. Small Button: </h3>
+      <Button size="button-small" handleClick={handleButtonClick}>
+        Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>3. Medium Button: </h3>
+      <Button handleClick={handleButtonClick}>Add a Gambit</Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>4. Large Button: </h3>
+      <Button size="button-large" handleClick={handleButtonClick}>
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>5. Extra Large Button: </h3>
+      <Button size="button-extra-large" handleClick={handleButtonClick}>
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>6. Disabled Extra Large Button: </h3>
+      <Button
+        size="button-extra-large"
+        handleClick={handleButtonClick}
+        disabled={true}
+      >
+        You can't click me.
+      </Button>
+    </ButtonContainer>
+    Icon Image Type
+    <ButtonContainer>
+      <h3>1. Extra Small Button: </h3>
+      <Button
+        size="button-extra-small"
+        handleClick={handleButtonClick}
+        type="icon-image"
+      >
+        Test
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>2. Small Button: </h3>
+      <Button
+        size="button-small"
+        handleClick={handleButtonClick}
+        type="icon-image"
+      >
+        Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>3. Medium Button: </h3>
+      <Button handleClick={handleButtonClick} type="icon-image">
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>4. Large Button: </h3>
+      <Button
+        size="button-large"
+        handleClick={handleButtonClick}
+        type="icon-image"
+      >
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>5. Extra Large Button: </h3>
+      <Button
+        size="button-extra-large"
+        handleClick={handleButtonClick}
+        type="icon-image"
+      >
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>6. Disabled Extra Large Button: </h3>
+      <Button
+        size="button-extra-large"
+        handleClick={handleButtonClick}
+        disabled={true}
+        type="icon-image"
+      >
+        You can't click me.
+      </Button>
+    </ButtonContainer>
+    Image Icon Type
+    <ButtonContainer>
+      <h3>1. Extra Small Button: </h3>
+      <Button
+        size="button-extra-small"
+        handleClick={handleButtonClick}
+        type="image-icon"
+      >
+        Test
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>2. Small Button: </h3>
+      <Button
+        size="button-small"
+        handleClick={handleButtonClick}
+        type="image-icon"
+      >
+        Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>3. Medium Button: </h3>
+      <Button handleClick={handleButtonClick} type="image-icon">
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>4. Large Button: </h3>
+      <Button
+        size="button-large"
+        handleClick={handleButtonClick}
+        type="image-icon"
+      >
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>5. Extra Large Button: </h3>
+      <Button
+        size="button-extra-large"
+        handleClick={handleButtonClick}
+        type="image-icon"
+      >
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>6. Disabled Extra Large Button: </h3>
+      <Button
+        size="button-extra-large"
+        handleClick={handleButtonClick}
+        disabled={true}
+        type="image-icon"
+      >
+        You can't click me.
+      </Button>
+    </ButtonContainer>
+    Transparent Icon Button Type
+    <ButtonContainer>
+      <h3>1. Extra Small Button: </h3>
+      <Button
+        handleClick={handleButtonClick}
+        type="image-icon"
+        appearance="transparent"
+        size="button-large"
+      >
+        Test
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>2. Small Button: </h3>
+      <Button
+        handleClick={handleButtonClick}
+        type="image-icon"
+        appearance="transparent"
+        size="button-large"
+      >
+        Gambit
+      </Button>
+    </ButtonContainer>
+  </Container>
+</Preview>
+
+## Props Details of the Button Component
+
+<Props of={Button} />
+
+> The Props with \* are required by the component.

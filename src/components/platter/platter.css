@@ -1,0 +1,21 @@
+/* Styles for the Platter Component */
+.platter-container {
+  background: #e2e4e6;
+  border-radius: 6px;
+  height: 100%;
+  padding: 10px;
+}
+
+.platter-container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.platter-container-contents {
+  height: 90%;
+  background-color: #c5c5c5;
+  border-radius: 6px;
+}

@@ -1,0 +1,47 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Modal from "./modal";
+import ModalDocumentation from "./modalDocumentation";
+import ModalExample from "./modalExample";
+import ModalSecondExample from './modalExampleSecond.js';
+
+<Meta title="Design System|Modal" component={Modal} />
+
+export const Container = styled.div`
+  margin-top: 8px;
+  margin-left: 8px;
+`;
+
+## Modal Component
+
+<Preview>
+  <Story name="Modal">
+    <Container>
+      <ModalExample />
+    </Container>
+  </Story>
+</Preview>
+
+## Trello Style Modal Component
+
+<Preview>
+  <Story name="Teams Modal">
+    <Container>
+      <ModalSecondExample />
+    </Container>
+  </Story>
+</Preview>
+
+## Different States of the Button Component
+
+<Preview>
+  <Container>
+    <ModalDocumentation />
+  </Container>
+</Preview>
+
+## Props Details of the Modal Component
+
+<Props of={Modal} />
+
+> The Props with \* are required by the component.

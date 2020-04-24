@@ -1,0 +1,55 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Textbox from "./textbox";
+
+<Meta title="Design System|TextBox" component={Textbox} />
+
+export const DemoContainer = styled.div`
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 50%;
+`;
+
+export const TextboxContainer = styled.div`
+  width: 50%;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+## Textbox Component
+
+<Preview>
+  <Story name="Textbox">
+    <DemoContainer>
+      <Textbox placeholder="This is a Nacho Style Textbox" />
+    </DemoContainer>
+  </Story>
+</Preview>
+
+## Different States of the Textbox Component
+
+<Preview>
+  <Container>
+    <TextboxContainer>
+      1. Normal Textbox with clear option
+      <Textbox placeholder="This is a Nacho Style Textbox" />
+    </TextboxContainer>
+    <TextboxContainer>
+      2. Normal Textbox without clear option
+      <Textbox placeholder="This is a Nacho Style Textbox" canClear={false} />
+    </TextboxContainer>
+    <TextboxContainer>
+      3. Read Only Textbox
+      <Textbox placeholder="This is a Nacho Style Textbox" readOnly={true} />
+    </TextboxContainer>
+  </Container>
+</Preview>
+
+## Props Details of the Textbox Component
+
+<Props of={Textbox} />
+
+> The Props with \* are required by the component.

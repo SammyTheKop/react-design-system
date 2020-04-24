@@ -1,0 +1,55 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Card from "./card";
+
+<Meta title="Design System|Card" component={Card} />
+
+export const CardContainer = styled.div`
+  margin: 8px;
+  width: 250px;
+  height: 100px;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+## Card Component
+
+<Preview>
+  <Story name="Card">
+    <CardContainer>
+      <Card>Marketing</Card>
+    </CardContainer>
+  </Story>
+</Preview>
+
+## Different States of the Card Component
+
+<Preview>
+  <Container>
+    <p>Card without Images</p>
+    <CardContainer>
+      <Card classname="card-component-background-2">Marketing</Card>
+    </CardContainer>
+    <CardContainer>
+      <Card classname="card-component-background-3">Customer Success</Card>
+    </CardContainer>
+    <CardContainer>
+      <Card classname="card-component-background-4">Testing</Card>
+    </CardContainer>
+    <p>Card with Images</p>
+    <CardContainer>
+      <Card classname="card-component-background-3" type="image-card">
+        Sales
+      </Card>
+    </CardContainer>
+  </Container>
+</Preview>
+
+## Props Details of the Card Component
+
+<Props of={Card} />
+
+> The Props with \* are required by the component.

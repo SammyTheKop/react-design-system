@@ -1,0 +1,58 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Label from "./label";
+
+<Meta title="Design System|Label" component={Label} />
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const LabelContainer = styled.div`
+  margin-top: 8px;
+  margin-left: 8px;
+`;
+
+## Label component
+
+<Preview>
+  <Story name="Label">
+    <LabelContainer>
+      <Label>This is a Label Add a Gambit</Label>
+    </LabelContainer>
+  </Story>
+</Preview>
+
+## Different States of the Label Component
+
+<Preview>
+  <Container>
+    <LabelContainer>
+      <h3>1. Extra Small Label: </h3>
+      <Label size="extra-small">Add a Gambit</Label>
+    </LabelContainer>
+    <LabelContainer>
+      <h3>2. Small Label: </h3>
+      <Label size="small">Add a Gambit</Label>
+    </LabelContainer>
+    <LabelContainer>
+      <h3>3. Medium Label: </h3>
+      <Label>Add a Gambit</Label>
+    </LabelContainer>
+    <LabelContainer>
+      <h3>4. Large Label: </h3>
+      <Label size="large">Add a Gambit</Label>
+    </LabelContainer>
+    <LabelContainer>
+      <h3>5. Extra Large Label: </h3>
+      <Label size="extra-large">Add a Gambit</Label>
+    </LabelContainer>
+  </Container>
+</Preview>
+
+## Props Details of the Label component
+
+<Props of={Label} />
+
+> The Props with \* are required by the component.

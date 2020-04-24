@@ -1,0 +1,11 @@
+/* Styles for the Icon Button Component */
+.icon-button-component-contents {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+.icon-button-component-contents-text {
+  font-weight: 700;
+}

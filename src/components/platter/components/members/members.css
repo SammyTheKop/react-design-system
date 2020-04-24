@@ -1,0 +1,66 @@
+.members-container {
+  width: 100%;
+  height: 100%;
+}
+.members-container-content {
+  width: 100%;
+}
+.members-container-content-header {
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+.members-container-content-list {
+  margin-top: 24px;
+  border-top: 1px solid #dfe1e6;
+}
+.members-container-content-list-details {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.members-container-content-list-details-initials, .members-container-content-list-details-name, .members-container-content-list-details-email {
+  font-weight: 700;
+}
+.members-container-content-list-details-initials {
+  background-color: #e2e4e6;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.members-container-content-list-details-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.members-container-content-list-details-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #dfe1e6;
+  align-items: center;
+}
+.members-container-content-addteams {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.members-container .normal-card {
+  margin: 40px;
+  background-color: white;
+  color: black;
+  align-items: unset;
+  overflow: auto;
+}
+.members-container .dropdown-button {
+  padding: 10px;
+  min-width: 50px;
+}
+.members-container .textbox-component {
+  width: 50%;
+}

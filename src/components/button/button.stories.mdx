@@ -1,0 +1,80 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+import Button from "./button";
+
+<Meta title="Design System|Button" component={Button} />
+
+export const handleButtonClick = () => {
+  console.log("Button Clicked");
+};
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ButtonContainer = styled.div`
+  margin-top: 8px;
+  margin-left: 8px;
+`;
+
+## Button Component
+
+<Preview>
+  <Story name="Button">
+    <ButtonContainer>
+      <Button handleClick={handleButtonClick}>Add a Gambit</Button>
+    </ButtonContainer>
+  </Story>
+</Preview>
+
+## Different States of the Button Component
+
+<Preview>
+  <Container>
+    <ButtonContainer>
+      <h3>1. Extra Small Button: </h3>
+      <Button size="button-extra-small" handleClick={handleButtonClick}>
+        Test
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>2. Small Button: </h3>
+      <Button size="button-small" handleClick={handleButtonClick}>
+        Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>3. Medium Button: </h3>
+      <Button handleClick={handleButtonClick}>Add a Gambit</Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>4. Large Button: </h3>
+      <Button size="button-large" handleClick={handleButtonClick}>
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>5. Extra Large Button: </h3>
+      <Button size="button-extra-large" handleClick={handleButtonClick}>
+        Add a Gambit
+      </Button>
+    </ButtonContainer>
+    <ButtonContainer>
+      <h3>6. Disabled Extra Large Button: </h3>
+      <Button 
+        size="button-extra-large" 
+        handleClick={handleButtonClick}
+        disabled={true}
+      >
+        You can't click me.
+      </Button>
+    </ButtonContainer>
+  </Container>
+</Preview>
+
+## Props Details of the Button Component
+
+<Props of={Button} />
+
+> The Props with \* are required by the component.
