@@ -8,11 +8,11 @@ import * as icons from "./shared/icons";
 export { styles, global, animation, icons };
 
 // exporting components
-export * from "./components/button/button";
-export * from "./components/card/card";
-export * from "./components/dropdown/dropdown";
-export * from "./components/iconButton/iconButton";
-export * from "./components/label/label";
-export * from "./components/modal/modal";
-export * from "./components/platter/platter";
-export * from "./components/textbox/textbox";
+export * as Button from "./components/button/button";
+export * as Card from "./components/card/card";
+export * as Dropdown from "./components/dropdown/dropdown";
+export * as IconButton from "./components/iconButton/iconButton";
+export * as Label from "./components/label/label";
+export * as Modal from "./components/modal/modal";
+export * as Platter from "./components/platter/platter";
+export * as Textbox from "./components/textbox/textbox";

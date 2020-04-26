@@ -16,12 +16,27 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     // Make whatever fine-grained changes you need
-    config.module.rules.push({
-      test: /\.jsx?$/,
-      exclude: /(node_modules)/,
-      use: "babel-loader",
-    });
-
+    config.entry = "./src/index.js";
+    config.output = {
+      filename: "bundle.js",
+      path: path.resolve(__dirname, "dist"),
+    };
+    config.module.rules = [
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
+        use: "babel-loader",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+        options: {
+          url: true,
+          import: true,
+          modules: true,
+        },
+      },
+    ];
     // Return the altered config
     return config;
   },

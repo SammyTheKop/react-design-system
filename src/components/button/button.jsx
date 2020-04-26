@@ -8,7 +8,7 @@ import classnames from "classnames";
 import { node, string, bool, func, oneOf } from "prop-types";
 
 // styles
-import "./button.css";
+// import "./button.css";
 
 /**
  * @name Button
