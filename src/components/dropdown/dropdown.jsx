@@ -10,7 +10,7 @@ import "./dropdown.css";
 const Dropdown = ({ dropdownName, dropdownList, ...props }) => {
   const getDropdownLists = () => {
     return (
-      <React.Fragment>
+      <>
         {dropdownList.map((item) => {
           const { id, name } = item;
 
@@ -25,7 +25,7 @@ const Dropdown = ({ dropdownName, dropdownList, ...props }) => {
             </button>
           );
         })}
-      </React.Fragment>
+      </>
     );
   };
 

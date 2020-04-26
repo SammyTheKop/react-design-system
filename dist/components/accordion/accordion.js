@@ -1,0 +1,7 @@
+import React from "react";
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from "react-accessible-accordion"; // Demo styles, see 'Styles' section below for some notes on use.
+
+import "react-accessible-accordion/dist/fancy-example.css";
+export default function Example() {
+  return /*#__PURE__*/React.createElement(Accordion, null, /*#__PURE__*/React.createElement(AccordionItem, null, /*#__PURE__*/React.createElement(AccordionItemHeading, null, /*#__PURE__*/React.createElement(AccordionItemButton, null, "What harsh truths do you prefer to ignore?")), /*#__PURE__*/React.createElement(AccordionItemPanel, null, /*#__PURE__*/React.createElement("p", null, "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."))), /*#__PURE__*/React.createElement(AccordionItem, null, /*#__PURE__*/React.createElement(AccordionItemHeading, null, /*#__PURE__*/React.createElement(AccordionItemButton, null, "Is free will real or just an illusion?")), /*#__PURE__*/React.createElement(AccordionItemPanel, null, /*#__PURE__*/React.createElement("p", null, "In ad velit in ex nostrud dolore cupidatat consectetur ea in ut nostrud velit in irure cillum tempor laboris sed adipisicing eu esse duis nulla non."))));
+}
