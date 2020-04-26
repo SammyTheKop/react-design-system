@@ -1,3 +1,17 @@
+# v0.1.9 (Sun Apr 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Updated modal stories mdx (samrat@hellotars.com)
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Transformed the ccmponents from JS to JSX (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.8 (Sun Apr 26 2020)
 
 #### ⚠️  Pushed to `master`
