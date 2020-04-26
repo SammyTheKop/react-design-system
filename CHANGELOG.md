@@ -1,3 +1,16 @@
+# v0.1.8 (Sun Apr 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Transformed the Button and Card from JS to JSX (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.7 (Sun Apr 26 2020)
 
 #### ⚠️  Pushed to `master`
