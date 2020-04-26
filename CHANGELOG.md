@@ -1,3 +1,16 @@
+# v0.1.7 (Sun Apr 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Updated the Index.js (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.6 (Fri Apr 24 2020)
 
 #### ⚠️  Pushed to `master`
