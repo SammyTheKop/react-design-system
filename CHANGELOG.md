@@ -1,3 +1,17 @@
+# v0.1.11 (Sun Apr 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Config Yaml Updated (samrat@hellotars.com)
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Transpiled the files from jsx to jsx and added dist (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.10 (Sun Apr 26 2020)
 
 #### ⚠️  Pushed to `master`
