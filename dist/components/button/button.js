@@ -5,7 +5,8 @@ import React from "react"; // classnames package
 import classnames from "classnames"; // prop-types
 
 // styles
-import "./button.css";
+// import "./button.css";
+
 /**
  * @name Button
  * @description function to create the button component
@@ -19,7 +20,6 @@ import "./button.css";
  * @param ...props (other props)
  * @returns button component
  */
-
 var Button = function Button(_ref) {
   var classname = _ref.classname,
       appearance = _ref.appearance,
