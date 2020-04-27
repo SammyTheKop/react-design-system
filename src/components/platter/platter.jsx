@@ -21,7 +21,6 @@ const Platter = ({ classname, children, headerName, ...props }) => {
             background: #e2e4e6;
             border-radius: 6px;
             height: 100%;
-            padding: 10px;
           }
 
           .platter-container-header {
