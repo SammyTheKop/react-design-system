@@ -18,7 +18,7 @@ var Platter = function Platter(_ref) {
     className: "platter-container-contents"
   }, children)), /*#__PURE__*/React.createElement("style", {
     jsx: true
-  }, "\n          /* Styles for the Platter Component */\n          .platter-container {\n            background: #e2e4e6;\n            border-radius: 6px;\n            height: 100%;\n            padding: 10px;\n          }\n\n          .platter-container-header {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            font-weight: 700;\n            margin-bottom: 16px;\n          }\n\n          .platter-container-contents {\n            height: 90%;\n            background-color: #c5c5c5;\n            border-radius: 6px;\n          }\n        "));
+  }, "\n          /* Styles for the Platter Component */\n          .platter-container {\n            background: #e2e4e6;\n            border-radius: 6px;\n            height: 100%;\n          }\n\n          .platter-container-header {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            font-weight: 700;\n            margin-bottom: 16px;\n          }\n\n          .platter-container-contents {\n            height: 90%;\n            background-color: #c5c5c5;\n            border-radius: 6px;\n          }\n        "));
 };
 
 Platter.defaultProps = {
