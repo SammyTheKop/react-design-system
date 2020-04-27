@@ -5,8 +5,23 @@ import React, { useState, useEffect, useRef } from "react"; // classnames packag
 
 import classnames from "classnames"; // prop-types
 
-// custom hook
-import handleClickOutside from "../../common-hooks/useHandleClickOutsie";
+// // custom hook
+// import handleClickOutside from "../../common-hooks/useHandleClickOutsie";
+
+/**
+ * @name handleClickOutside
+ * @description function to check when the user clicks outside the modal
+ * @param {*} node
+ * @param {*} clickedOutside
+ * @returns none
+ */
+var handleClickOutside = function handleClickOutside(node, clickedOutside) {
+  return function (event) {
+    if (node && !node.current.contains(event.target)) {
+      clickedOutside();
+    }
+  };
+};
 
 var Modal = function Modal(_ref) {
   var classname = _ref.classname,

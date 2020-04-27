@@ -7,8 +7,21 @@ import classnames from "classnames";
 // prop-types
 import { string, func, bool, node, oneOf } from "prop-types";
 
-// custom hook
-import handleClickOutside from "../../common-hooks/useHandleClickOutsie";
+// // custom hook
+// import handleClickOutside from "../../common-hooks/useHandleClickOutsie";
+
+/**
+ * @name handleClickOutside
+ * @description function to check when the user clicks outside the modal
+ * @param {*} node
+ * @param {*} clickedOutside
+ * @returns none
+ */
+const handleClickOutside = (node, clickedOutside) => (event) => {
+  if (node && !node.current.contains(event.target)) {
+    clickedOutside();
+  }
+};
 
 const Modal = ({ classname, showModal, children, onClose, size, ...props }) => {
   const [isVisible, setVisibility] = useState(showModal);

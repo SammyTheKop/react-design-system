@@ -22,14 +22,13 @@ const Textbox = ({
   ...props
 }) => {
   const [textValue, setTextValue] = useState(value);
+  const textInput = useRef(null);
 
   useEffect(() => {
     if (textValue !== value) {
       setTextValue(value);
     }
   }, [value]);
-
-  const textInput = useRef(null);
 
   const updateTextValue = (e) => {
     setTextValue(e.target.value);
@@ -95,7 +94,7 @@ const Textbox = ({
             width: 100%;
           }
 
-          .textbox-component > input {
+          .textbox-component input {
             min-height: 48px;
             font-size: 16px;
             width: 100%;
@@ -115,8 +114,8 @@ const Textbox = ({
             -webkit-appearance: none;
           }
 
-          .textbox-component > input::-ms-clear,
-          .textbox-component > input::-ms-reveal {
+          .textbox-component input::-ms-clear,
+          .textbox-component input::-ms-reveal {
             display: none;
           }
 
@@ -132,7 +131,7 @@ const Textbox = ({
             align-items: center;
           }
 
-          .textbox-component .clear > .clear__icon {
+          .textbox-component .clear .clear__icon {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -143,25 +142,25 @@ const Textbox = ({
             padding: 0 0 2px 1px;
           }
 
-          .textbox-component > input[type="text"]:focus {
+          .textbox-component input[type="text"]:focus {
             background: #fff;
             border: none;
             box-shadow: inset 0 0 0 2px #0079bf;
           }
 
-          .textbox-component > input[type="text"]:focus:hover {
+          .textbox-component input[type="text"]:focus:hover {
             background: #fff;
             border: none;
             box-shadow: inset 0 0 0 2px #0079bf;
           }
 
-          .textbox-component > .textbox-component-disabled:focus {
+          .textbox-component .textbox-component-disabled:focus {
             background-color: #fafbfc !important;
             border: none !important;
             box-shadow: inset 0 0 0 2px #dfe1e6 !important;
           }
 
-          .textbox-component > input[type="text"]:hover {
+          .textbox-component input[type="text"]:hover {
             background-color: #ebecf0;
             border: none;
             box-shadow: inset 0 0 0 2px #dfe1e6;
