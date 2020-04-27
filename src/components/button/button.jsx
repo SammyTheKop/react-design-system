@@ -90,6 +90,7 @@ const Button = ({
             display: flex;
             justify-content: center;
             font-weight: 700;
+            margin: 0;
           }
 
           .button-component .button-disabled {
