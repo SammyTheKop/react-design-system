@@ -1,3 +1,16 @@
+# v0.1.17 (Mon Apr 27 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Updated platter.js dist file (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.16 (Mon Apr 27 2020)
 
 #### ⚠️  Pushed to `master`
