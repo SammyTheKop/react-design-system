@@ -20,7 +20,7 @@ var Dropdown = function Dropdown(_ref) {
         }
       }, name), /*#__PURE__*/React.createElement("style", {
         jsx: true
-      }, "\n                  /* Links inside the dropdown */\n                  .dropdown-content-buttons {\n                    background: whitesmoke;\n                    margin: 0px;\n                    border: 0px;\n                    box-shadow: none;\n                    color: black;\n                    padding: 16px;\n                    display: block;\n                    width: 100%;\n                  }\n\n                  /* Change color of dropdown links on hover */\n                  .dropdown-content-buttons:hover {\n                    background: wheat;\n                  }\n                "));
+      }, "\n                  /* Links inside the dropdown */\n                  .dropdown-content-buttons {\n                    background: whitesmoke;\n                    margin: 0px;\n                    border: 0px;\n                    box-shadow: none;\n                    color: black;\n                    display: block;\n                    width: 100%;\n                  }\n\n                  /* Change color of dropdown links on hover */\n                  .dropdown-content-buttons:hover {\n                    background: wheat;\n                  }\n                "));
     }));
   };
 

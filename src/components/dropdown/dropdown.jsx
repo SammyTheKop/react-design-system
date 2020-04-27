@@ -30,7 +30,6 @@ const Dropdown = ({ dropdownName, dropdownList, ...props }) => {
                     border: 0px;
                     box-shadow: none;
                     color: black;
-                    padding: 16px;
                     display: block;
                     width: 100%;
                   }
