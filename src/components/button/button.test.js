@@ -46,12 +46,10 @@ it("Case 2: Checks the Button data-testId is correct or not", () => {
   const handleButtonClick = () => {
     console.log("Button Clicked");
   };
-
-  const div = document.createElement("div");
-  ReactDOM.render(<Button handleClick={handleButtonClick}>Test</Button>, div);
-  expect(div.textContent).toEqual("Test");
-
-  ReactDOM.unmountComponentAtNode(div);
+  const { getByTestId } = render(
+    <Button handleClick={handleButtonClick}>Test</Button>
+  );
+  expect(getByTestId("button")).toBeInTheDocument();
 });
 
 // Case 3: Checks the Button data-testid is correct or not
