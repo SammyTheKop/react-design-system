@@ -5,9 +5,6 @@ import React, { useState, useRef, useEffect } from "react"; // classnames packag
 
 import classnames from "classnames"; // prop-types
 
-// styles
-import "./textbox.css";
-
 var Textbox = function Textbox(_ref) {
   var classname = _ref.classname,
       children = _ref.children,
@@ -45,7 +42,7 @@ var Textbox = function Textbox(_ref) {
     textInput.current.focus();
   };
 
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: classnames(classname, "textbox-component", {
       disabled: readOnly
     })
@@ -80,7 +77,9 @@ var Textbox = function Textbox(_ref) {
     "data-testid": "clear-textbox"
   }, /*#__PURE__*/React.createElement("span", {
     className: "clear__icon"
-  }, "\xD7")), children);
+  }, "\xD7")), children), /*#__PURE__*/React.createElement("style", {
+    jsx: true
+  }, "\n          /* Styles for the Textbox Component */\n          .textbox-component {\n            position: relative;\n            display: inline-block;\n            width: 100%;\n          }\n\n          .textbox-component > input {\n            min-height: 48px;\n            font-size: 16px;\n            width: 100%;\n            box-sizing: border-box;\n            background-color: #fafbfc;\n            border: none;\n            box-shadow: inset 0 0 0 2px #dfe1e6;\n            color: #172b4d;\n            box-sizing: border-box;\n            border-radius: 3px;\n            display: block;\n            line-height: 20px;\n            padding: 8px 12px;\n            transition-property: background-color, border-color, box-shadow;\n            transition-duration: 85ms;\n            transition-timing-function: ease;\n            -webkit-appearance: none;\n          }\n\n          .textbox-component > input::-ms-clear,\n          .textbox-component > input::-ms-reveal {\n            display: none;\n          }\n\n          .textbox-component .clear {\n            position: absolute;\n            top: 0;\n            bottom: 0px;\n            right: 0;\n            color: #282c34;\n            margin-right: 5px;\n            cursor: pointer;\n            display: flex;\n            align-items: center;\n          }\n\n          .textbox-component .clear > .clear__icon {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            border: solid 1px;\n            border-radius: 50%;\n            height: 14px;\n            width: 14px;\n            padding: 0 0 2px 1px;\n          }\n\n          .textbox-component > input[type=\"text\"]:focus {\n            background: #fff;\n            border: none;\n            box-shadow: inset 0 0 0 2px #0079bf;\n          }\n\n          .textbox-component > input[type=\"text\"]:focus:hover {\n            background: #fff;\n            border: none;\n            box-shadow: inset 0 0 0 2px #0079bf;\n          }\n\n          .textbox-component > .textbox-component-disabled:focus {\n            background-color: #fafbfc !important;\n            border: none !important;\n            box-shadow: inset 0 0 0 2px #dfe1e6 !important;\n          }\n\n          .textbox-component > input[type=\"text\"]:hover {\n            background-color: #ebecf0;\n            border: none;\n            box-shadow: inset 0 0 0 2px #dfe1e6;\n          }\n        "));
 };
 
 Textbox.defaultProps = {
