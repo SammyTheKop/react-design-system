@@ -4,9 +4,6 @@ import React from "react";
 // prop-types
 import { node, string, bool, func, oneOf } from "prop-types";
 
-// styles
-import "./iconButton.css";
-
 // components
 import Button from "../button/button";
 
@@ -79,18 +76,35 @@ const IconButton = ({
   };
 
   return (
-    <Button
-      classname={`${classname} icon-button-component`}
-      appearance={appearance}
-      size={size}
-      handleClick={clickHandler}
-      disabled={disabled}
-      {...props}
-    >
-      {type === "image-icon" && getIconButtonContent()}
-      {type === "icon" && getIconContent()}
-      {type === "icon-image" && getImageIconContent()}
-    </Button>
+    <>
+      <Button
+        classname={`${classname} icon-button-component`}
+        appearance={appearance}
+        size={size}
+        handleClick={clickHandler}
+        disabled={disabled}
+        {...props}
+      >
+        {type === "image-icon" && getIconButtonContent()}
+        {type === "icon" && getIconContent()}
+        {type === "icon-image" && getImageIconContent()}
+      </Button>
+      <style jsx>
+        {`
+          /* Styles for the Icon Button Component */
+          .icon-button-component-contents {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+          }
+
+          .icon-button-component-contents-text {
+            font-weight: 700;
+          }
+        `}
+      </style>
+    </>
   );
 };
 

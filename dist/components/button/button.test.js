@@ -47,12 +47,12 @@ it("Case 2: Checks the Button data-testId is correct or not", function () {
     console.log("Button Clicked");
   };
 
-  var div = document.createElement("div");
-  ReactDOM.render( /*#__PURE__*/React.createElement(Button, {
+  var _render = render( /*#__PURE__*/React.createElement(Button, {
     handleClick: handleButtonClick
-  }, "Test"), div);
-  expect(div.textContent).toEqual("Test");
-  ReactDOM.unmountComponentAtNode(div);
+  }, "Test")),
+      getByTestId = _render.getByTestId;
+
+  expect(getByTestId("button")).toBeInTheDocument();
 }); // Case 3: Checks the Button data-testid is correct or not
 
 it("Case 3: Checks the Button Text data-testId is correct or not", function () {
@@ -60,18 +60,18 @@ it("Case 3: Checks the Button Text data-testId is correct or not", function () {
     console.log("Button Clicked");
   };
 
-  var _render = render( /*#__PURE__*/React.createElement(Button, {
+  var _render2 = render( /*#__PURE__*/React.createElement(Button, {
     handleClick: handleButtonClick
   }, "Test")),
-      getByTestId = _render.getByTestId;
+      getByTestId = _render2.getByTestId;
 
   expect(getByTestId("button-text")).toBeInTheDocument();
 }); // Case 4: Checks the number of times button is clicked
 
 it("Case 4: Checks the number of times button is clicked", function () {
-  var _render2 = render( /*#__PURE__*/React.createElement(TestComponent, null)),
-      getByTestId = _render2.getByTestId,
-      getByText = _render2.getByText;
+  var _render3 = render( /*#__PURE__*/React.createElement(TestComponent, null)),
+      getByTestId = _render3.getByTestId,
+      getByText = _render3.getByText;
 
   fireEvent.click(getByTestId("button"));
   fireEvent.click(getByTestId("button"));
@@ -79,8 +79,8 @@ it("Case 4: Checks the number of times button is clicked", function () {
 }); // Case 5: Checks the Button Component Name is correct or Not
 
 it("Case 5: Checks the Button Component Name is correct or Not", function () {
-  var _render3 = render( /*#__PURE__*/React.createElement(TestComponent, null)),
-      getByText = _render3.getByText;
+  var _render4 = render( /*#__PURE__*/React.createElement(TestComponent, null)),
+      getByText = _render4.getByText;
 
   expect(getByText("Click to increase: 0")).toBeInTheDocument();
 });

@@ -5,9 +5,7 @@ import React, { useState, useEffect, useRef } from "react"; // classnames packag
 
 import classnames from "classnames"; // prop-types
 
-// styles
-import "./modal.css"; // custom hook
-
+// custom hook
 import handleClickOutside from "../../common-hooks/useHandleClickOutsie";
 
 var Modal = function Modal(_ref) {
@@ -67,7 +65,7 @@ var Modal = function Modal(_ref) {
       document.removeEventListener("keydown", handleEsc, false);
     };
   });
-  return /*#__PURE__*/React.createElement("div", Object.assign({
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", Object.assign({
     className: classnames(classname, "modal", {
       show: isVisible
     })
@@ -82,7 +80,9 @@ var Modal = function Modal(_ref) {
     tabIndex: 0,
     className: "close-icon",
     onClick: closeModal
-  }, "\xD7"), children));
+  }, "\xD7"), children)), /*#__PURE__*/React.createElement("style", {
+    jsx: true
+  }, "\n          /* Styles for the Modal Component */\n          .modal {\n            display: none; /* Hidden by default */\n            position: fixed; /* Stay in place */\n            z-index: 999; /* Sit on top */\n            left: 0;\n            top: 0;\n            width: 100%; /* Full width */\n            height: 100%; /* Full height */\n            overflow: auto; /* Enable scroll if needed */\n            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */\n          }\n\n          .modal .modal-content {\n            background-color: #fefefe;\n            position: relative;\n            border-radius: 3px;\n            margin: auto;\n            overflow: hidden;\n          }\n\n          .modal-content.large {\n            width: 90%;\n            height: 90%;\n          }\n\n          .modal-content.medium {\n            width: 75%;\n            height: 75%;\n          }\n\n          .modal-content.small {\n            width: 50%;\n            width: 50%;\n          }\n\n          .modal .modal-content.fadein {\n            animation-name: fadein;\n            animation-duration: 0.4s;\n            display: block;\n          }\n\n          .modal .modal-header {\n            padding: 15px;\n            text-align: left;\n            border-bottom: 1px solid #ececec;\n          }\n\n          .modal .modal-body {\n            text-align: left;\n            min-height: 100px;\n          }\n\n          .modal .modal-footer {\n            padding: 15px;\n            text-align: left;\n            border-top: 1px solid #e5e5e5;\n            background: #ececec;\n            border-radius: 0 0 8px 8px;\n          }\n\n          .close-icon {\n            position: absolute;\n            right: 15px;\n            top: 5px;\n            cursor: pointer;\n            font-size: 30px;\n          }\n\n          .modal.show {\n            display: flex;\n          }\n\n          /* Add Animation */\n          @keyframes fadein {\n            from {\n              opacity: 0;\n            }\n            to {\n              opacity: 1;\n            }\n          }\n        "));
 };
 
 Modal.defaultProps = {

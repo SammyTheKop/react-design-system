@@ -7,9 +7,6 @@ import classnames from "classnames";
 // prop-types
 import { node, string, bool, func, oneOf } from "prop-types";
 
-// styles
-// import "./button.css";
-
 /**
  * @name Button
  * @description function to create the button component
@@ -75,6 +72,7 @@ const Button = ({
             background: linear-gradient(#5aac44 0px, #519839 100%);
             box-shadow: 0 1px 0 #959da1;
             border-radius: 4px;
+            border: 0px;
             color: white;
             height: 40px;
             padding: 8px;

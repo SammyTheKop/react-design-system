@@ -2,9 +2,7 @@ import _objectWithoutProperties from "/home/samghosh/Documents/Design-System/lea
 // react
 import React from "react"; // prop-types
 
-// styles
-import "./iconButton.css"; // components
-
+// components
 import Button from "../button/button"; // font-awesome
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -76,13 +74,15 @@ var IconButton = function IconButton(_ref) {
     })));
   };
 
-  return /*#__PURE__*/React.createElement(Button, Object.assign({
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Button, Object.assign({
     classname: "".concat(classname, " icon-button-component"),
     appearance: appearance,
     size: size,
     handleClick: clickHandler,
     disabled: disabled
-  }, props), type === "image-icon" && getIconButtonContent(), type === "icon" && getIconContent(), type === "icon-image" && getImageIconContent());
+  }, props), type === "image-icon" && getIconButtonContent(), type === "icon" && getIconContent(), type === "icon-image" && getImageIconContent()), /*#__PURE__*/React.createElement("style", {
+    jsx: true
+  }, "\n          /* Styles for the Icon Button Component */\n          .icon-button-component-contents {\n            display: flex;\n            justify-content: space-around;\n            width: 100%;\n            align-items: center;\n          }\n\n          .icon-button-component-contents-text {\n            font-weight: 700;\n          }\n        "));
 };
 
 IconButton.defaultProps = {
