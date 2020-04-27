@@ -1,3 +1,19 @@
+# v0.1.15 (Mon Apr 27 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Updated the CircleCI config file (samrat@hellotars.com)
+- Updated the Button Snapshot (samrat@hellotars.com)
+- Removed the CSS files for the Component Styles and used Styled-JSX for styling the components, this is very useful for Server Side Rendering as well (samrat@hellotars.com)
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Fixed the Button Component Margin Issue (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.14 (Mon Apr 27 2020)
 
 #### ⚠️  Pushed to `master`
