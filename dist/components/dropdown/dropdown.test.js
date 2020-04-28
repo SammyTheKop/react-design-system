@@ -30,11 +30,11 @@ export var dropdownList = [{
 }]; // Case 1: Dropdown Renders properly or not
 
 it("Case 1: Dropdown Component Renders Correctly", function () {
-  var buttonComponentTree = renderer.create( /*#__PURE__*/React.createElement(Dropdown, {
+  var dropdownComponentTree = renderer.create( /*#__PURE__*/React.createElement(Dropdown, {
     dropdownName: "Dropdown",
     dropdownList: dropdownList
   })).toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  expect(dropdownComponentTree).toMatchSnapshot();
 }); // Case 2: Checks the Dropdown Button Test id is correct or not
 
 it("Case 2: Checks the Dropdown Button Test id is correct or not", function () {

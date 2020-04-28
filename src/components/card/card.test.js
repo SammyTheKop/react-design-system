@@ -13,8 +13,8 @@ import "@testing-library/jest-dom/extend-expect";
 
 // Case 1: Card Snapshot matches or not
 it("Case 1: Card Component Renders Correctly", () => {
-  const buttonComponentTree = renderer.create(<Card>Test</Card>).toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  const cardComponentTree = renderer.create(<Card>Test</Card>).toJSON();
+  expect(cardComponentTree).toMatchSnapshot();
 });
 
 // Case 2: Card Renders the children (content) properly or not

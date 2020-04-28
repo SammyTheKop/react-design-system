@@ -36,10 +36,10 @@ it("Case 1: IconButton Component Renders Correctly", () => {
     console.log("IconButton Clicked");
   };
 
-  const buttonComponentTree = renderer
+  const iconButtonComponentTree = renderer
     .create(<IconButton handleClick={handleButtonClick}>Test</IconButton>)
     .toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  expect(iconButtonComponentTree).toMatchSnapshot();
 });
 
 // Case 2: Checks the IconButton data-testid is correct or not

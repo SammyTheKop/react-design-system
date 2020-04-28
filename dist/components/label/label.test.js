@@ -8,8 +8,8 @@ import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect"; // Case 1: Label Renders properly or not
 
 it("Case 1: Label Component Renders Correctly", function () {
-  var buttonComponentTree = renderer.create( /*#__PURE__*/React.createElement(Label, null, "Test")).toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  var labelComponentTree = renderer.create( /*#__PURE__*/React.createElement(Label, null, "Test")).toJSON();
+  expect(labelComponentTree).toMatchSnapshot();
 }); // Case 2: Label Component renders the correct value or not
 
 it("Case 2: Label Component renders the correct value or not (Positive Testing", function () {

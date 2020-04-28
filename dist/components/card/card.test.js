@@ -9,8 +9,8 @@ import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect"; // Case 1: Card Snapshot matches or not
 
 it("Case 1: Card Component Renders Correctly", function () {
-  var buttonComponentTree = renderer.create( /*#__PURE__*/React.createElement(Card, null, "Test")).toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  var cardComponentTree = renderer.create( /*#__PURE__*/React.createElement(Card, null, "Test")).toJSON();
+  expect(cardComponentTree).toMatchSnapshot();
 }); // Case 2: Card Renders the children (content) properly or not
 
 it("Case 2: Card Renders the children (content) properly or not", function () {

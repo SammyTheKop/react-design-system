@@ -38,10 +38,10 @@ export const dropdownList = [
 
 // Case 1: Dropdown Renders properly or not
 it("Case 1: Dropdown Component Renders Correctly", () => {
-  const buttonComponentTree = renderer
+  const dropdownComponentTree = renderer
     .create(<Dropdown dropdownName="Dropdown" dropdownList={dropdownList} />)
     .toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  expect(dropdownComponentTree).toMatchSnapshot();
 });
 
 // Case 2: Checks the Dropdown Button Test id is correct or not

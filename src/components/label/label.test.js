@@ -12,8 +12,8 @@ import "@testing-library/jest-dom/extend-expect";
 
 // Case 1: Label Renders properly or not
 it("Case 1: Label Component Renders Correctly", () => {
-  const buttonComponentTree = renderer.create(<Label>Test</Label>).toJSON();
-  expect(buttonComponentTree).toMatchSnapshot();
+  const labelComponentTree = renderer.create(<Label>Test</Label>).toJSON();
+  expect(labelComponentTree).toMatchSnapshot();
 });
 
 // Case 2: Label Component renders the correct value or not
