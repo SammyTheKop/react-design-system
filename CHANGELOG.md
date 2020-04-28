@@ -1,3 +1,17 @@
+# v0.1.22 (Tue Apr 28 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Updated the Dropdown Component Test Cases (samrat@hellotars.com)
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Updated the Dropdown Component (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.21 (Mon Apr 27 2020)
 
 #### ⚠️  Pushed to `master`

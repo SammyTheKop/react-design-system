@@ -1,6 +1,6 @@
 {
   "name": "design-system-tars",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
