@@ -8,7 +8,7 @@ const Dropdown = ({ dropdownName, dropdownList, ...props }) => {
   const getDropdownLists = () => {
     return (
       <>
-        {dropdownList.map((item) => {
+        {dropdownList.map((item, index) => {
           const { id, name } = item;
 
           return (
@@ -16,8 +16,9 @@ const Dropdown = ({ dropdownName, dropdownList, ...props }) => {
               <button
                 type="button"
                 className="dropdown-content-buttons"
-                key={`${id} ${name}`}
+                key={`${id} ${name} ${index}`}
                 onClick={(event) => item.clickHandlerFunc(event, item)}
+                data-testid="dropdown-content-button"
               >
                 {name}
               </button>
@@ -51,7 +52,7 @@ const Dropdown = ({ dropdownName, dropdownList, ...props }) => {
   return (
     <>
       <div className="dropdown-component" {...props}>
-        <button className="dropdown-button">
+        <button className="dropdown-button" data-testid="dropdown-button">
           {dropdownName}
           <i className="dropdown-button-arrow-down"></i>
         </button>

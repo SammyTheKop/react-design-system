@@ -1,7 +1,6 @@
 import _slicedToArray from "/home/samghosh/Documents/Design-System/learnstorybook-design-system/node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/slicedToArray";
 // react
-import React, { useState } from "react";
-import ReactDOM from "react-dom"; // component
+import React, { useState } from "react"; // component
 
 import Button from "./button"; // jest renderer
 

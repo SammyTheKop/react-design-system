@@ -1,6 +1,5 @@
 // react
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 
 // component
 import Button from "./button";

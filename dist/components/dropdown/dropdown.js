@@ -8,16 +8,17 @@ var Dropdown = function Dropdown(_ref) {
       props = _objectWithoutProperties(_ref, ["dropdownName", "dropdownList"]);
 
   var getDropdownLists = function getDropdownLists() {
-    return /*#__PURE__*/React.createElement(React.Fragment, null, dropdownList.map(function (item) {
+    return /*#__PURE__*/React.createElement(React.Fragment, null, dropdownList.map(function (item, index) {
       var id = item.id,
           name = item.name;
       return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("button", {
         type: "button",
         className: "dropdown-content-buttons",
-        key: "".concat(id, " ").concat(name),
+        key: "".concat(id, " ").concat(name, " ").concat(index),
         onClick: function onClick(event) {
           return item.clickHandlerFunc(event, item);
-        }
+        },
+        "data-testid": "dropdown-content-button"
       }, name), /*#__PURE__*/React.createElement("style", {
         jsx: true
       }, "\n                  /* Links inside the dropdown */\n                  .dropdown-content-buttons {\n                    background: whitesmoke;\n                    margin: 0px;\n                    border: 0px;\n                    box-shadow: none;\n                    color: black;\n                    padding: 16px;\n                    display: block;\n                    width: 100%;\n                  }\n\n                  /* Change color of dropdown links on hover */\n                  .dropdown-content-buttons:hover {\n                    background: wheat;\n                  }\n                "));
@@ -27,7 +28,8 @@ var Dropdown = function Dropdown(_ref) {
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", Object.assign({
     className: "dropdown-component"
   }, props), /*#__PURE__*/React.createElement("button", {
-    className: "dropdown-button"
+    className: "dropdown-button",
+    "data-testid": "dropdown-button"
   }, dropdownName, /*#__PURE__*/React.createElement("i", {
     className: "dropdown-button-arrow-down"
   })), /*#__PURE__*/React.createElement("div", {
