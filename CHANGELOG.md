@@ -1,3 +1,16 @@
+# v0.1.24 (Tue Apr 28 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of https://github.com/SammyTheKop/learnstorybook-design-system (samrat@hellotars.com)
+- Updated the Test Cases of the Textbox components (samrat@hellotars.com)
+
+#### Authors: 1
+
+- Samrat Ghosh (samrat@hellotars.com)
+
+---
+
 # v0.1.23 (Tue Apr 28 2020)
 
 #### ⚠️  Pushed to `master`
