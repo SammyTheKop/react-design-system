@@ -8,7 +8,7 @@ import Dropdown from "./dropdown";
 import renderer from "react-test-renderer";
 
 // testing library react
-import { render, fireEvent, getByText } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
 // Dropdown List that can be reused by the Dropdown Component below in terms of executing the test cases
