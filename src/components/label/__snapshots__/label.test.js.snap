@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Case 1: Label Component Renders Correctly 1`] = `
+Array [
+  <div
+    className="label-component"
+  >
+    <label
+      className="label medium"
+      data-testid="label"
+      htmlFor=""
+    >
+      Test
+    </label>
+  </div>,
+  <style
+    jsx={true}
+  >
+    
+          /* Styles for the Label Component */
+          /* Keep adding the Styles of the Label Size Props below and other CSS properties above */
+          .label.extra-large {
+            font-size: 24px;
+          }
+
+          .label.large {
+            font-size: 20px;
+          }
+
+          .label.medium {
+            font-size: 16px;
+          }
+
+          .label.small {
+            font-size: 14px;
+          }
+
+          .label.extra-small {
+            font-size: 10px;
+          }
+        
+  </style>,
+]
+`;
